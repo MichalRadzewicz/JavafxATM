@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MoneyTransferController">
+   <children>
+      <Button fx:id="backButton" layoutX="640.0" layoutY="4.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#backButtonOnAction" opacity="0.0" prefHeight="57.0" prefWidth="57.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="imageBack" disable="true" fitHeight="53.0" fitWidth="50.0" layoutX="643.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Photos/back.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="90.0" prefHeight="40.0" prefWidth="216.0" text="Enter the account number" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="171.0" prefHeight="29.0" prefWidth="137.0" text="Transfer amount" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="247.0" prefHeight="29.0" prefWidth="106.0" text="Transfer title" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="317.0" prefHeight="40.0" prefWidth="160.0" text="Date of the transfer" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="397.0" prefHeight="29.0" prefWidth="112.0" text="Transfer type" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="20.0" prefHeight="29.0" prefWidth="137.0" text="Recipient's name" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="recipientsNameTextfield" layoutX="14.0" layoutY="50.0" prefHeight="40.0" prefWidth="300.0" promptText="Recipient's name" />
+      <TextField fx:id="accountNumberTextfield" layoutX="14.0" layoutY="125.0" prefHeight="40.0" prefWidth="300.0" promptText="Enter the account number" text="54 2030 0045 1130 7250" />
+      <TextField fx:id="transferAmoundTextfield" layoutX="14.0" layoutY="200.0" prefHeight="40.0" prefWidth="300.0" promptText="Transfer amount" />
+      <TextField fx:id="transferTitleTextfield" layoutX="14.0" layoutY="275.0" prefHeight="40.0" prefWidth="300.0" promptText="Transfer title" text="Money transfer" />
+      <Button fx:id="confirmButton" layoutX="373.0" layoutY="390.0" mnemonicParsing="false" onAction="#confirmButtonOnAction" prefHeight="70.0" prefWidth="280.0" style="-fx-background-color: #1877f2; -fx-text-fill: #fff;" text="Confirm">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <DatePicker fx:id="dataTransferDataPicker" layoutX="14.0" layoutY="350.0" prefHeight="40.0" prefWidth="300.0" promptText="Date of the transfer" />
+      <ChoiceBox fx:id="choiceBox" layoutX="14.0" layoutY="426.0" prefHeight="40.0" prefWidth="300.0" />
+   </children>
+</AnchorPane>
